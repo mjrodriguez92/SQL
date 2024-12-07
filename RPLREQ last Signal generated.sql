@@ -1,0 +1,1 @@
+select top 100 * from fbitsignalxml x(nolock)join fbitSignal s (nolock) on s.id=x.SignalID where s.SignalTypeID=15order by x.id desc
