@@ -1,0 +1,1 @@
+ select ffMaterialUnitDetail.Reserved_01 as Skid,ffMaterialUnitDetail.Reserved_02 as LotCode,ffMaterialUnit.Quantity,ffMaterialUnit.BalanceQty from ffMaterialUnitDetail with(nolock)  inner join ffMaterialUnit with(nolock) on ffMaterialUnit.ID = ffMaterialUnitDetail.MaterialUnitID  where Reserved_02 = '10900786001'
